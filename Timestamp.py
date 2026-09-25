@@ -1,18 +1,14 @@
-#CHALLENGE 1 TASK 4
-
 import csv
 from datetime import datetime
 import math
 import matplotlib.pyplot as pyplot
 import matplotlib.dates as dts
 
-def temp_calc(d_out):
+#The first part of the script converts the Dout values ​​in the CSV file into Celsius values.
+
+def temp_calc(d_out, Rext, R0, BETA):
 	
-	#Values
-	R_ext = 7680.0
-	R0 = 10000.0
 	T0 = 298.15
-	BETA = 3435
 
 	#SIGN MANAGEMENT
 	if d_out >= 1024:
